@@ -1,0 +1,99 @@
+John@Chaverra-Rios MINGW64 ~
+$ pws
+bash: pws: command not found
+
+John@Chaverra-Rios MINGW64 ~
+$ pwd
+/c/Users/John
+
+John@Chaverra-Rios MINGW64 ~
+$ mkdir temporalgit
+
+John@Chaverra-Rios MINGW64 ~
+$ cd temporalgit
+
+John@Chaverra-Rios MINGW64 ~/temporalgit
+$ ls
+
+John@Chaverra-Rios MINGW64 ~/temporalgit
+$ psd
+bash: psd: command not found
+
+John@Chaverra-Rios MINGW64 ~/temporalgit
+$ pwd
+/c/Users/John/temporalgit
+
+John@Chaverra-Rios MINGW64 ~/temporalgit
+$ touch ejemplo1.txt
+
+John@Chaverra-Rios MINGW64 ~/temporalgit
+$ touch ejemplo2.txt
+
+John@Chaverra-Rios MINGW64 ~/temporalgit
+$ ls
+ejemplo1.txt  ejemplo2.txt
+
+John@Chaverra-Rios MINGW64 ~/temporalgit
+$ git init
+Initialized empty Git repository in C:/Users/John/temporalgit/.git/
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git add .
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git commit -m "subir archivos al commit"
+[master (root-commit) 50ac00b] subir archivos al commit
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 ejemplo1.txt
+ create mode 100644 ejemplo2.txt
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git remote add origin https://github.com/johnchv/mirepositorioremoto.git
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/johnchv/mirepositorioremoto.git'
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 225 bytes | 225.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/johnchv/mirepositorioremoto.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git remote -v
+origin  https://github.com/johnchv/mirepositorioremoto.git (fetch)
+origin  https://github.com/johnchv/mirepositorioremoto.git (push)
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git log
+commit 50ac00b92cabd1d922001a12bbdfbc16ac78e41a (HEAD -> master, origin/master)
+Author: johnchv <johnchv@yahoo.com>
+Date:   Tue Jun 4 16:51:44 2024 -0500
+
+    subir archivos al commit
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ ^C
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$
