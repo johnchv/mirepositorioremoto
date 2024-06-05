@@ -97,3 +97,33 @@ $ ^C
 
 John@Chaverra-Rios MINGW64 ~/temporalgit (master)
 $
+----
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git push -u origin master
+To https://github.com/johnchv/mirepositorioremoto.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/johnchv/mirepositorioremoto.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
+$ git pull origin master --allow-unrelated-histories
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 2.63 KiB | 12.00 KiB/s, done.
+From https://github.com/johnchv/mirepositorioremoto
+ * branch            master     -> FETCH_HEAD
+   50ac00b..3a0dd3a  master     -> origin/master
+Updating 50ac00b..3a0dd3a
+Fast-forward
+ LineasDelBash | 99 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ ejemplo1.txt  |  3 ++
+ 2 files changed, 102 insertions(+)
+ create mode 100644 LineasDelBash
+
+John@Chaverra-Rios MINGW64 ~/temporalgit (master)
